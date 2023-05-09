@@ -9,3 +9,7 @@ After we had established our technology stack and architecture, we began buildin
 Next, we built the frontend using React.js. We defined the components and views and integrated them with the backend API. We made sure that the user interface was responsive, user-friendly, and accessible.
 
 Finally, we connected the frontend with the backend, making API calls to fetch and display data in real-time. We also made sure that the data persisted in the database by creating the necessary models, controllers, and services.
+
+Throughout the development process, we tested the application rigorously, using unit tests, integration tests, and end-to-end tests to ensure that everything worked as expected.
+
+Overall, building a full-stack web application following the PVC paradigm and implementing user authentication while creating our server-side API and connecting it to a database was a challenging but rewarding experience. Our teamwork, planning, and use of modern technologies helped us build a scalable and maintainable application that met our client's needs.
