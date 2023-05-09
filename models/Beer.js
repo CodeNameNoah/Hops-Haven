@@ -14,15 +14,11 @@ Beer.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    tagline: {
+    type: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    images: {
       type: DataTypes.STRING,
       allowNull: false,
     },
