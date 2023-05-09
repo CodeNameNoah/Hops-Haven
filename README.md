@@ -13,3 +13,20 @@ Finally, we connected the frontend with the backend, making API calls to fetch a
 Throughout the development process, we tested the application rigorously, using unit tests, integration tests, and end-to-end tests to ensure that everything worked as expected.
 
 Overall, building a full-stack web application following the PVC paradigm and implementing user authentication while creating our server-side API and connecting it to a database was a challenging but rewarding experience. Our teamwork, planning, and use of modern technologies helped us build a scalable and maintainable application that met our client's needs.
+
+---
+
+## Languages and Technologies Used
+
+[![Socials](https://skillicons.dev/icons?i=html,css,js,git,powershell,mysql,nodejs,express,heroku)](https://skillicons.dev)
+
+| Featured Technology Used |                     Link                     |
+| :----------------------: | :------------------------------------------: |
+|        `Node.js`         |        [LINK](https://nodejs.dev/en/)        |
+|          `NPM`           |        [LINK](https://www.npmjs.com/)        |
+|         `Mysql`          |        [LINK](https://www.mysql.com/)        |
+|        `Express`         |        [LINK](https://expressjs.com/)        |
+|         `Heroku`         |    [LINK](https://devcenter.heroku.com/)     |
+|         `dotenv`         | [LINK](https://www.npmjs.com/package/dotenv) |
+
+---
