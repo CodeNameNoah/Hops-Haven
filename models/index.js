@@ -9,7 +9,7 @@ User.belongsToMany(Beer, {
 });
 
 // Beer has many Users (through favBeers)
-Beer.hasMany(User, {
+Beer.belongsToMany(User, {
     foreignKey: "beer_id",
     through: FavBeer
 });
