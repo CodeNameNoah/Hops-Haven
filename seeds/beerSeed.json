@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Sierra Nevada Pale Ale",
+    "type": "Pale Ale",
+    "description": "Sierra Nevada Pale Ale is a delightful example of the classic pale ale style. It showcases the Cascade hop, known for its floral aroma and citrusy flavor."
+  },
+  {
+    "name": "Guinness Draught",
+    "type": "Stout",
+    "description": "Guinness Draught is a classic Irish dry stout, known for its creamy texture and rich, roasted flavor. It features notes of coffee, chocolate, and a hint of caramel."
+  },
+  {
+    "name": "Heineken",
+    "type": "Lager",
+    "description": "Heineken is a globally recognized lager, known for its crisp and refreshing taste. It has a balanced flavor with subtle hop notes."
+  },
+  {
+    "name": "Stella Artois",
+    "type": "Pilsner",
+    "description": "Stella Artois is a Belgian pilsner with a smooth and slightly bitter taste. It is known for its distinctive golden color and floral aroma."
+  },
+  {
+    "name": "Blue Moon Belgian White",
+    "type": "Wheat Beer",
+    "description": "Blue Moon Belgian White is a popular wheat beer brewed with Valencia orange peel and a touch of coriander. It has a citrusy and refreshing flavor."
+  },
+  {
+    "name": "Samuel Adams Boston Lager",
+    "type": "Amber Lager",
+    "description": "Samuel Adams Boston Lager is a full-bodied and flavorful beer with a balance of malt sweetness and hop bitterness. It has a rich amber color."
+  },
+  {
+    "name": "Budweiser",
+    "type": "American Lager",
+    "description": "Budweiser is an American-style lager known for its crisp and clean taste. It is brewed with high-quality ingredients for a refreshing experience."
+  },
+  {
+    "name": "Corona Extra",
+    "type": "Pale Lager",
+    "description": "Corona Extra is a light and refreshing Mexican lager with a smooth and crisp taste. It is often served with a wedge of lime for added flavor."
+  },
+  {
+    "name": "IPA",
+    "type": "IPA",
+    "description": "IPA (India Pale Ale) is a hop-forward beer style known for its strong and bitter flavor. It features floral, citrus, and piney hop aromas."
+  },
+  {
+    "name": "Wheat Beer",
+    "type": "Wheat Beer",
+    "description": "Wheat beer is a refreshing beer style brewed with a significant proportion of wheat. It has a light and crisp character with notes of banana and clove."
+  },
+  {
+    "name": "Pilsner",
+    "type": "Pilsner",
+    "description": "Pilsner is a pale lager beer with a clean and crisp taste. It originated in the Czech Republic and is characterized by its golden color and hop bitterness."
+  },
+  {
+    "name": "Porter",
+    "type": "Porter",
+    "description": "Porter is a dark beer style with a rich and malty flavor. It often features notes of chocolate, coffee, and caramel, with a smooth and velvety texture."
+  },
+  {
+    "name": "Stout",
+    "type": "Stout",
+    "description": "Stout is a dark and robust beer style with a roasted malt flavor."
+  },
+  {
+    "name": "Hefeweizen",
+    "type": "Wheat Beer",
+    "description": "Hefeweizen is a German wheat beer known for its cloudy appearance and flavors of banana and clove. It has a refreshing and slightly tart taste."
+  },
+  {
+    "name": "Belgian Tripel",
+    "type": "Belgian Ale",
+    "description": "Belgian Tripel is a strong and complex beer style with fruity esters, spicy phenols, and a moderate hop bitterness. It has a golden color and a dry finish."
+  },
+  {
+    "name": "Amber Ale",
+    "type": "Amber Ale",
+    "description": "Amber Ale is a balanced beer style with a malt-forward profile and moderate hop bitterness. It has a reddish-amber color and flavors of caramel and toasted bread."
+  },
+  {
+    "name": "Saison",
+    "type": "Farmhouse Ale",
+    "description": "Saison is a farmhouse-style ale with a fruity and spicy character. It is known for its dry and refreshing nature, with a touch of tartness."
+  },
+  {
+    "name": "Dunkelweizen",
+    "type": "Dark Wheat Beer",
+    "description": "Dunkelweizen is a dark wheat beer with flavors of chocolate, caramel, and toasted malt. It has a rich and smooth character, complemented by the banana and clove notes of a traditional Hefeweizen."
+  },
+  {
+    "name": "Belgian Witbier",
+    "type": "Wheat Beer",
+    "description": "Belgian Witbier, also known as White Beer, is a refreshing wheat beer brewed with coriander and orange peel. It has a hazy appearance and a citrusy flavor with hints of spice."
+  },
+  {
+    "name": "American Pale Ale",
+    "type": "Pale Ale",
+    "description": "American Pale Ale is a hop-forward beer style with a strong malt backbone. It features citrusy and piney hop flavors, balanced with caramel and biscuit notes from the malt."
+  },
+  {
+    "name": "Gose",
+    "type": "Sour Ale",
+    "description": "Gose is a traditional German sour beer style brewed with coriander and salt. It has a tart and slightly salty taste, with hints of citrus and spice."
+  },
+  {
+    "name": "Milk Stout",
+    "type": "Stout",
+    "description": "Milk Stout, also known as Sweet Stout, is a dark beer style with a creamy and smooth texture. It features flavors of roasted malt, chocolate, and a touch of sweetness."
+  },
+  {
+    "name": "ESB (Extra Special Bitter)",
+    "type": "Amber Ale",
+    "description": "ESB is a British beer style with a balance of malt sweetness and hop bitterness. It has a copper color and flavors of toffee, caramel, and earthy hops."
+  },
+  {
+    "name": "Rauchbier",
+    "type": "Smoked Beer",
+    "description": "Rauchbier is a German beer style known for its smoky flavor, reminiscent of smoked meats. It has a dark color and a rich malt character, with a subtle hop presence."
+  },
+  {
+    "name": "Belgian Dubbel",
+    "type": "Belgian Ale",
+    "description": "Belgian Dubbel is a Trappist beer style with a rich and complex flavor profile. It features notes of dark fruits, caramel, and spices, with a moderate level of sweetness."
+  }
+]
