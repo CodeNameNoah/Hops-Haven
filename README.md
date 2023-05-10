@@ -28,3 +28,10 @@ Overall, building a full-stack web application following the PVC paradigm and im
 |         `dotenv`         | [LINK](https://www.npmjs.com/package/dotenv) |
 
 ---
+
+|Collaborators |                                                                                                                                  Socials                                                                                                                                   |
+| :-----------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| `Noah Hoang`  | [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/codenamenoah) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/codenamenoah/) [![Socials](https://skillicons.dev/icons?i=twitter)](https://twitter.com/CodeNameNoahH) |
+| `Cassie Tepper`  | [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/CTep09) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/cassie-tepper/)
+| `Afi Nhkume-Crecy`  | [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/AFICRECY) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/afi-nkhume-crecy-932862128/)
+| `Tamara Dusenbury`  | [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/tdusenbury) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/tamara-dusenbury-02ab8591/)
