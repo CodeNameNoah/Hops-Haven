@@ -1,0 +1,29 @@
+<div>
+    <h2>Favorites</h2>
+        <ul>
+            <li></li>
+        </ul>
+</div>
+
+
+<div>
+     <h2>Your Beers of the Day</h2>
+        <ul>
+            {{#each randomBeers as |randomBeer|}}
+                <li>{{randomBeer.dataValues.name}}</li>
+            {{/each}}
+        </ul>
+</div>
+
+
+<div>
+    <h2>Beers to Try</h2>
+        <ul>
+            <li></li>
+        </ul>
+</div>
+
+{{!-- How do we want to add to Favorites and Beers to Try? --}}
+{{!-- Option 1: Search Box that brings up info from seeds/api and also has two buttons underneath that say "Add to Favorites" and "Add to Try"--}}
+{{!-- Option 2: Manually enter (like on the Notetaker App ) --}}
+{{!-- Option 3:  Drag and Drop (super complex--justfyi)--}}
