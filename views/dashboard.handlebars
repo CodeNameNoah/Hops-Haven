@@ -1,4 +1,32 @@
 <div class="container">
+  <div class="columns is-centered">
+    <div class="column is-one-third">
+      <form>
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search" class="input" />
+        <br />
+        <button type="submit" class="button is-primary">Submit</button>
+      </form>
+    </div>
+    <div class="column is-one-third">
+      <div class="columns">
+        <div class="column">
+          <h2 class="subtitle">Beers to Try</h2>
+          <ul id="beers-to-try"></ul>
+        </div>
+        <div class="column">
+          <h2 class="subtitle">My Favorites</h2>
+          <ul id="favorites"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="results"></div>
+</div>
+
+<script src="/js/dashboard.js"></script>
+
+{{!-- <div class="container">
     <div class="row">
         <div class="col-md-4">
             <div>
@@ -81,6 +109,4 @@
     <script src="./js/dashboard.js"></script>
 </body>
 
-</html>
-
-
+</html> --}}
