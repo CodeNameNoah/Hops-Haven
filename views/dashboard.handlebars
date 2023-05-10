@@ -23,7 +23,13 @@
         </ul>
 </div>
 
-{{!-- How do we want to add to Favorites and Beers to Try? --}}
-{{!-- Option 1: Search Box that brings up info from seeds/api and also has two buttons underneath that say "Add to Favorites" and "Add to Try"--}}
-{{!-- Option 2: Manually enter (like on the Notetaker App ) --}}
-{{!-- Option 3:  Drag and Drop (super complex--justfyi)--}}
+<form>
+    <label for ="search">Search Beers Here:</label>
+    <input type="text" id= "search" name="search" placeholder="Enter your search term">
+    <button type="submit">Search</button>
+</form>
+
+ <div id="results"></div>
+
+    <h2>My Favorites</h2>
+    <ul id="favorites"></ul>
