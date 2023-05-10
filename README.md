@@ -38,3 +38,28 @@ Overall, we believe that beer enthusiasts will love using Hops-Haven to find dat
 | `Afi Nhkume-Crecy`  | [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/AFICRECY) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/afi-nkhume-crecy-932862128/)
 | `Tamara Dusenbury`  | [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/tdusenbury) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/tamara-dusenbury-02ab8591/)
 
+## Take A Look At Our Application!
+<!-- TODO: ADD WHEN DEPLOYED LINK AVAILABLE -->
+<!-- Deployed Application Link [ByteBlogger](https://byteblogger.herokuapp.com/) -->
+
+<!-- ![ByteBlogger](https://user-images.githubusercontent.com/127361736/237054631-0e9598b9-955a-4c68-82f2-d2015a29eafb.gif) -->
+
+---
+
+## Installation
+
+**To Clone Our Repository Using CLI**
+
+1. Click on the green code button and copy the link for the SSH key.
+2. Once clip-boarded load up a command line interface and change directory to one of your preference
+3. Enter in the command `git@github.com:CodeNameNoah/Hops-Haven.git`
+4. Enter your protected SSH password
+
+**To Download Our Repository as a ZIP File**
+
+1. Click on the green code button
+2. In the bottom of the drop-down menu, click Download Zip
+
+![github](https://user-images.githubusercontent.com/127361736/227422005-d28a9020-e331-4098-976b-df9c1e545bb4.png)
+
+---
