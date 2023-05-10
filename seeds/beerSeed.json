@@ -123,5 +123,156 @@
     "name": "Belgian Dubbel",
     "type": "Belgian Ale",
     "description": "Belgian Dubbel is a Trappist beer style with a rich and complex flavor profile. It features notes of dark fruits, caramel, and spices, with a moderate level of sweetness."
+  },
+  {
+    "name": "Weihenstephaner Hefeweissbier",
+    "type": "German Hefeweizen",
+    "description": "Weihenstephaner Hefeweissbier is a renowned German Hefeweizen with a long-standing brewing tradition. It exhibits a cloudy appearance, a refreshing banana and clove flavor profile, and a smooth, creamy texture."
+  },
+  {
+    "name": "Chimay Blue",
+    "type": "Belgian Strong Dark Ale",
+    "description": "Chimay Blue, also known as Chimay Grande Réserve, is a Belgian Trappist ale with a robust and complex character. It showcases a deep mahogany color, rich malty flavors, fruity esters, and a warming alcohol presence."
+  },
+  {
+    "name": "Sapporo",
+    "type": "Japanese Lager",
+    "description": "Sapporo is a popular Japanese lager with a crisp and clean taste. It is brewed using quality ingredients, resulting in a light and refreshing beer that pairs well with a variety of cuisines."
+  },
+  {
+    "name": "Tiger Beer",
+    "type": "Asian Lager",
+    "description": "Tiger Beer is a well-known Asian lager brewed in Singapore. It features a smooth and crisp profile with a touch of hop bitterness and a clean finish, making it a popular choice for many beer enthusiasts."
+  },
+  {
+    "name": "Dos Equis Ambar",
+    "type": "Vienna Lager",
+    "description": "Dos Equis Ambar is a Mexican Vienna Lager with a rich amber color and a balanced blend of malt sweetness and hop bitterness. It offers flavors of toasted bread, caramel, and a hint of floral notes."
+  },
+  {
+    "name": "Peroni Nastro Azzurro",
+    "type": "Italian Lager",
+    "description": "Peroni Nastro Azzurro is an Italian lager that exudes a crisp and refreshing character. It is crafted using a meticulous brewing process, resulting in a beer with a delicate balance of malt and hop flavors."
+  },
+  {
+    "name": "Tsingtao",
+    "type": "Chinese Lager",
+    "description": "Tsingtao is a popular Chinese lager with a light and clean profile. It is brewed using high-quality ingredients and showcases a mild malt sweetness, subtle hop notes, and a smooth finish."
+  },
+  {
+    "name": "Asahi Super Dry",
+    "type": "Japanese Rice Lager",
+    "description": "Asahi Super Dry is a Japanese rice lager known for its light and crisp taste. It offers a clean and refreshing flavor profile with subtle fruity and floral notes."
+  },
+  {
+    "name": "Hoegaarden",
+    "type": "Belgian Witbier",
+    "description": "Hoegaarden is a classic Belgian witbier with a hazy appearance and a refreshing citrus and spice flavor. It is brewed with coriander and orange peel, resulting in a distinctive and flavorful beer."
+  },
+  {
+    "name": "Fuller's ESB",
+    "type": "Extra Special Bitter",
+    "description": "Fuller's ESB (Extra Special Bitter) is a British ale with a deep amber color and a rich, malty character. It features a well-balanced combination of hop bitterness and malt sweetness, creating a satisfying and flavorful brew."
+  },
+  {
+    "name": "Paulaner Hefe-Weissbier",
+    "type": "German Hefeweizen",
+    "description": "Paulaner Hefe-Weissbier is a classic German Hefeweizen with a rich history and a distinctive character. It features a cloudy appearance, a fruity and spicy flavor profile, and a smooth, creamy texture."
+  },
+  {
+    "name": "Rochefort 10",
+    "type": "Belgian Quadrupel",
+    "description": "Rochefort 10 is a renowned Belgian Quadrupel brewed by Trappist monks. It is a complex and full-bodied beer with flavors of dark fruits, caramel, and warming alcohol. It has a deep mahogany color and a rich, velvety texture."
+  },
+  {
+    "name": "Erdinger Weissbier",
+    "type": "German Hefeweizen",
+    "description": "Erdinger Weissbier is a well-known German Hefeweizen that exemplifies the style's characteristics. It offers a refreshing blend of banana, clove, and yeast flavors, with a smooth and effervescent mouthfeel."
+  },
+  {
+    "name": "Pilsner Urquell",
+    "type": "Czech Pilsner",
+    "description": "Pilsner Urquell is a legendary Czech Pilsner that pioneered the Pilsner beer style. It has a crisp and clean taste, with a balanced malt sweetness and a pronounced hop bitterness. It features a golden color and a refreshing finish."
+  },
+  {
+    "name": "Modelo Especial",
+    "type": "Mexican Lager",
+    "description": "Modelo Especial is a popular Mexican lager known for its smooth and refreshing character. It offers a balanced flavor profile with notes of malt, corn, and a touch of hop bitterness."
+  },
+  {
+    "name": "Franziskaner Weissbier",
+    "type": "German Hefeweizen",
+    "description": "Franziskaner Weissbier is a traditional German Hefeweizen that captures the essence of the style. It boasts a cloudy appearance, a fruity and spicy flavor profile, and a lively carbonation that enhances its overall refreshment."
+  },
+  {
+    "name": "Cerveza Negra",
+    "type": "Dark Lager",
+    "description": "Cerveza Negra is a flavorful dark lager hailing from Latin America. It features a deep brown color, roasted malt flavors, hints of chocolate and caramel, and a smooth, clean finish."
+  },
+  {
+    "name": "Kronenbourg 1664 Blanc",
+    "type": "White Beer",
+    "description": "Kronenbourg 1664 Blanc is a refreshing white beer from France. It is brewed with wheat, featuring a hazy appearance, citrusy notes, and a subtle spicy undertone."
+  },
+  {
+    "name": "Brooklyn Lager",
+    "type": "Amber Lager",
+    "description": "Brooklyn Lager is an American amber lager with a robust malt profile and a firm hop bitterness. It showcases flavors of caramel, toasty bread, and floral hop notes, offering a well-balanced and flavorful experience."
+  },
+  {
+    "name": "Leffe Blonde",
+    "type": "Belgian Blonde Ale",
+    "description": "Leffe Blonde is a Belgian Blonde Ale with a bright golden color and a complex flavor profile. It offers a balance of fruity esters and spicy phenols."
+  },
+
+  {
+    "name": "Samuel Adams Boston Lager",
+    "type": "Vienna Lager",
+    "description": "Samuel Adams Boston Lager is a classic American Vienna Lager with a rich amber color and a balanced blend of malt sweetness and hop bitterness. It features flavors of caramel, toasted bread, and a hint of citrus."
+  },
+  {
+    "name": "Guinness Draught",
+    "type": "Irish Dry Stout",
+    "description": "Guinness Draught is an iconic Irish dry stout with a velvety texture and a rich, roasted flavor. It showcases notes of coffee, chocolate, and a subtle bitterness, offering a distinctively smooth and satisfying drinking experience."
+  },
+  {
+    "name": "Duvel",
+    "type": "Belgian Strong Golden Ale",
+    "description": "Duvel is a renowned Belgian Strong Golden Ale with a strong and complex character. It features a pale golden color, fruity esters, spicy phenols, and a dry finish. It is known for its effervescent carbonation and warming alcohol presence."
+  },
+  {
+    "name": "Augustiner Helles",
+    "type": "Munich Helles Lager",
+    "description": "Augustiner Helles is a traditional Munich Helles Lager with a pale golden color and a clean, crisp taste. It offers a balanced combination of bready malt flavors, subtle hop bitterness, and a refreshing finish."
+  },
+  {
+    "name": "Chimay Red",
+    "type": "Belgian Dubbel",
+    "description": "Chimay Red, also known as Chimay Première, is a Trappist Belgian Dubbel with a deep brown color and a rich, malty character. It showcases flavors of dark fruits, caramel, and a touch of spice, with a medium body and a smooth finish."
+  },
+  {
+    "name": "Pilsner Urquell",
+    "type": "Czech Pilsner",
+    "description": "Pilsner Urquell is a renowned Czech Pilsner that pioneered the Pilsner beer style. It has a crisp and clean taste, with a balanced malt sweetness and a pronounced hop bitterness. It features a golden color and a refreshing finish."
+  },
+  {
+    "name": "Rogue Dead Guy Ale",
+    "type": "Maibock",
+    "description": "Rogue Dead Guy Ale is a Maibock-style beer with a deep amber color and a rich, malty flavor. It offers a balanced combination of toffee, caramel, and toasted malt notes, with a subtle hop presence and a smooth, clean finish."
+  },
+  {
+    "name": "La Chouffe",
+    "type": "Belgian Strong Ale",
+    "description": "La Chouffe is a Belgian Strong Ale with a golden color and a lively carbonation. It features fruity and spicy flavors, with hints of citrus, coriander, and a touch of sweetness, creating a refreshing and enjoyable drinking experience."
+  },
+  {
+    "name": "Weihenstephaner Kristallweissbier",
+    "type": "German Kristallweizen",
+    "description": "Weihenstephaner Kristallweissbier is a crystal-clear version of a German wheat beer. It offers a refreshing and light-bodied profile with flavors of banana, clove, and a crisp, wheaty character."
+  },
+  {
+    "name": "Tripel Karmeliet",
+    "type": "Belgian Tripel",
+    "description": "Tripel Karmeliet is a renowned Belgian Tripel with a golden color and a complex flavor profile."
   }
 ]
