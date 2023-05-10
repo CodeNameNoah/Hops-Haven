@@ -17,7 +17,7 @@ router.post("/", async (req, res) => {
       // Store the user's ID, username, and logged-in status in the session
       req.session.userId = newUser.id;
       req.session.username = newUser.username;
-      req.session.loggedIn = true;
+      req.session.logged_in = true;
 
       // Sending new user data as response
       res.status(200).json(newUser);
@@ -62,7 +62,7 @@ router.post("/login", async (req, res) => {
       // Store the user's ID, username, and logged-in status in the session
       req.session.userId = newUser.id;
       req.session.username = newUser.username;
-      req.session.loggedIn = true;
+      req.session.logged_in = true;
 
       // Letting the user know they have successfully logged in
       res.status(200).json({ user: newUser, message: "You are logged in!" });
@@ -76,7 +76,7 @@ router.post("/login", async (req, res) => {
 // Log out route /api/users/logout
 router.post("/logout", (req, res) => {
   // Checking to see if the user is actually logged in
-  if (req.session.loggedIn) {
+  if (req.session.logged_in) {
     // Destroy the session
     req.session.destroy(() => {
       res.status(204).end();
