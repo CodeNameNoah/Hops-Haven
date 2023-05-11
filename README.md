@@ -22,12 +22,18 @@ Overall, we believe that beer enthusiasts will love using Hops-Haven to find dat
 
 | Featured Technology Used |                     Link                     |
 | :----------------------: | :------------------------------------------: |
+|        `JavaScript`      |     [LINK](https://devdocs.io/javascript/)   |
 |        `Node.js`         |        [LINK](https://nodejs.dev/en/)        |
+|          `Git`           |         [LINK](https://git-scm.com/)         |
 |          `NPM`           |        [LINK](https://www.npmjs.com/)        |
 |         `Mysql`          |        [LINK](https://www.mysql.com/)        |
+|         `Sequelize`      |        [LINK](https://sequelize.org/)        |
 |        `Express`         |        [LINK](https://expressjs.com/)        |
 |         `Heroku`         |    [LINK](https://devcenter.heroku.com/)     |
 |         `dotenv`         | [LINK](https://www.npmjs.com/package/dotenv) |
+|         `Handlebars`     |       [LINK](https://handlebarsjs.com/)      |
+|        `Insomnia`        |        [LINK](https://insomnia.rest/)        |
+
 
 ---
 
