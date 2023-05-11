@@ -56,6 +56,8 @@
       beerItem.innerHTML = `${beer.name} <button data-id="${beer.id}">Remove</button>`;
       favoritesList.appendChild(beerItem);
 
+      alert("Added to Favorites!");
+
       const removeButton = beerItem.querySelector("button");
       removeButton.addEventListener("click", (event) => {
         const beerId = event.target.dataset.id;
@@ -71,6 +73,8 @@
       const beerItem = document.createElement("li");
       beerItem.innerHTML = `${beer.name} <button data-id="${beer.id}">Remove</button>`;
       beersToTryList.appendChild(beerItem);
+
+      alert("Added to Beers to Try!");
 
       const removeButton = beerItem.querySelector("button");
       removeButton.addEventListener("click", (event) => {
