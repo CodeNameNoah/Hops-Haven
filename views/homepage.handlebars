@@ -1,16 +1,17 @@
 <div>
 
-    <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80" />
 
-    <h2>Beer of the Day</h2>
+    <h2 id="beerMe">Beer Me!</h2>
 
     <ul>
         {{#each randomBeers as |randomBeer|}}
-            <li>{{randomBeer.dataValues.name}}</li>
+            <li>Name: {{randomBeer.dataValues.name}}</li>
+            <li>Type: {{randomBeer.dataValues.type}}</li>
+            <li>Description:  {{randomBeer.dataValues.description}}</li>
         {{/each}}
     </ul>
-
+<br>
     <h3>What other beer lovers are drinking</h3>
-
+<br>
     <a href="/login">Sign in for personalized recommendations</a>
 </div>
