@@ -29,15 +29,15 @@
            <div class="navbar-menu navbar-end">
                 {{!-- <div class="navbar-end"> --}}
               {{#if logged_in}}
-                  <a class="navbar-item" href="about.html">About</a>
-                  <a class="navbar-item" href="#">Contact</a>
+                  {{!-- <a class="navbar-item" href="about.html">About</a> --}}
+                  {{!-- <a class="navbar-item" href="#">Contact</a> --}}
                   <a class="navbar-item" href="/dashboard">Dashboard</a>
                   <a class="navbar-item" id="logout" href="/">Logout</a>
                 {{!-- </div> --}}
               {{else}}
                 {{!-- <div class="navbar-end"> --}}
-                  <a class="navbar-item" href="about.html">About</a>
-                  <a class="navbar-item" href="/staff">Contact</a>
+                  {{!-- <a class="navbar-item" href="about.html">About</a> --}}
+                  <a class="navbar-item" href="/staff">Staff</a>
                   <a class="navbar-item" href="/login">Log In</a>
                 {{!-- </div> --}}
               {{/if}}

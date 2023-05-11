@@ -31,7 +31,7 @@ router.get('/', async (req, res) => {
       const randomBeersIDs = generateRandomNumbers(1, numOfBeers, 3)
 
       const randomBeers = [];
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 1; i++) {
         const beerData = await Beer.findByPk(randomBeersIDs[i])
         randomBeers.push(beerData);
       }
