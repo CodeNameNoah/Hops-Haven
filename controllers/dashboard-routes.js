@@ -20,7 +20,7 @@ router.get("/", withAuth, async (req, res) => {
     // Render "all-posts-loggedin" template and pass in the post data
     res.render("dashboard", {
     favBeer,
-      loggedIn: true,
+      logged_in: true,
     });
   } catch (err) {
     // res.redirect("login");
