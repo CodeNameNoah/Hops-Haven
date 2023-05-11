@@ -13,11 +13,11 @@
   <body>
     {{!-- <div class="flex-column justify-space-around">
       <header class="display-flex justify-space-between align-center p-2"> --}}
-        
+
         <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
               <a class="navbar-item" href="/">
-                  <h1 class="hero">Hops Haven</h1>
+                  <h1 class="title is-4">Hops Haven</h1>
               </a>
               <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                   <span aria-hidden="true"></span>
@@ -26,33 +26,36 @@
               </a>
           </div>
 
-          <div class="navbar-menu">
+           <div class="navbar-menu">
+                {{!-- <div class="navbar-end"> --}}
               {{#if logged_in}}
-                <div class="navbar-end">
-                  {{!-- <a class="navbar-item" href="about.html">About</a>
-                  <a class="navbar-item" href="#">Contact</a> --}}
+                  <a class="navbar-item" href="about.html">About</a>
+                  <a class="navbar-item" href="#">Contact</a>
                   <a class="navbar-item" href="/dashboard">Dashboard</a>
-                  <a class="navbar-item" href="/">Logout</a>
-                </div>
+                  <a class="navbar-item" id="logout" href="/">Logout</a>
+                {{!-- </div> --}}
               {{else}}
-                <div class="navbar-end">
-                  {{!-- <a class="navbar-item" href="about.html">About</a>
-                  <a class="navbar-item" href="#">Contact</a> --}}
+              <p>{{logged_in}}</p>
+                {{!-- <div class="navbar-end"> --}}
+                  <a class="navbar-item" href="about.html">About</a>
+                  <a class="navbar-item" href="#">Contact</a>
                   <a class="navbar-item" href="/login">Log In</a>
-                </div>
+                {{!-- </div> --}}
               {{/if}}
 
           </div>
         </nav>
-{{!-- Cassie added --}}
+
+ {{!-- Cassie added --}}
          <div class="hero-image">
         <h1 class="hero-text">Welcome to Hops Haven</h1>
-    </div>
+         </div>
+{{!--  <a href="/"><h1>Hops Haven<img /></h1></a> --}}
 
-{{!--  <a href="/"><h1>Hops Haven<img /></h1></a>
-
-        <nav>
-          <!-- Conditionally render login or logout links -->
+         <nav>
+          
+        <!-- Conditionally render login or logout links -->
+        {{!--
           {{#if logged_in}}
             <a class="col-auto" href="/dashboard">Dashboard</a>
             <a class="col-auto" id="logout">Logout</a>
@@ -63,8 +66,8 @@
 
             {{! </nav> }}
           {{/if}}
-        </nav> --}}
-
+        </nav> 
+--}}
 
       {{!-- </header> --}}
       <main class="container container-fluid mt-5">
@@ -74,7 +77,7 @@
       <footer>
 
       </footer>
-    </div>
+    {{!-- </div> --}}
 
     <!-- Render script for logged in users only -->
     {{#if logged_in}}
