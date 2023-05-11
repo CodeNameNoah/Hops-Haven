@@ -53,13 +53,322 @@ Overall, we believe that beer enthusiasts will love using Hops-Haven to find dat
 ---
 <p>&nbsp;</p>
 
-## Installation
-
 ### Installation:
 
 Have you ever wanted to search through a listing of Beers to find exactly what you're looking for? Our team decided on creating a web application that contained an expansive back catalog of beer types and descriptions utilizing a Web API and Sequelize databases. Using the Punk API, we were able to incorporate their database into our own application. Punk API is a free open public domain beer database & schema for use in any (programming) language (e.g. uses plain text data sets). To install this project, a knowledge of HTML, CSS, JavaScript, Web API’s, and Server Side API, Node.js, and Express.js, SQL, Sequelize, Handlebars, and Heroku were required. Methods used ranged from functions, document window methods, querySelector, getElementById, Event Listeners, Variables, If/Else Statements, and the Punk API link and key.
 
-The web application is intended for the user to be able to enter our website, initially land on the Homepage which will give them options to sign in and create an account, or login if they are already a member. Once they do this they will enter the user personalized dashboard which includes a search bar for the user to enter the word “beer” to get all beers, or a beer name or type in order to pull from the Punk API’s database. The user can then select and remove from either their beer “Favorites List”, “Beers to Try”, and upon refresh are able to see a randomly suggested beer and type. We installed the following dependencies with my npm install (bcrypt, dotenv, express-handlebars, mysql2, and sequelize). Bcrypt was used for password hashing, and express-handlebars that uses a template and an input object to generate HTML. When the template is executed, these expressions are replaced with values from an input object.  The code below makes this happen. 
+The web application is intended for the user to be able to enter our website, initially land on the Homepage which will give them options to sign in and create an account, or login if they are already a member. Once they do this they will enter the user personalized dashboard which includes a search bar for the user to enter the word “beer” to get all beers, or a beer name or type in order to pull from the Punk API’s database. The user can then select and remove from either their beer “Favorites List”, “Beers to Try”, and upon refresh are able to see a randomly suggested beer and type. We installed the following dependencies with my npm install (bcrypt, dotenv, express-handlebars, mysql2, and sequelize). Bcrypt was used for password hashing, and express-handlebars that uses a template and an input object to generate HTML. When the template is executed, these expressions are replaced with values from an input object.  The code below makes this happen.
+
+<p>&nbsp;</p>
+
+Server.js
+```
+const path = require('path');
+const express = require('express');
+const session = require('express-session');
+const exphbs = require('express-handlebars');
+const routes = require('./controllers');
+const sequelize = require('./config/connection');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+require("dotenv").config()
+
+const sess = {
+   secret: "Super super secret",
+   cookie: {
+       maxAge: 3600000,
+   },
+   resave: false,
+   saveUninitialized: false,
+   store: new SequelizeStore({
+       db: sequelize,
+   }),
+};
+
+app.use(session(sess));
+
+const hbs = exphbs.create();
+
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(routes);
+
+sequelize.sync({ force: false }).then(() => {
+   app.listen(PORT, () =>
+       console.log(`App listening on port ${PORT}!`));
+});
+```
+<p>&nbsp;</p>
+
+
+Homepage Handlebars
+```
+<div>
+   <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80" />
+
+   <h2>Beer of the Day</h2>
+
+   <ul>
+       {{#each randomBeers as |randomBeer|}}
+           <li>{{randomBeer.dataValues.name}}</li>
+       {{/each}}
+   </ul>
+
+   <h3>What other beer lovers are drinking</h3>
+
+   <a href="/login">Sign in for personalized recommendations</a>
+</div>
+```
+<p>&nbsp;</p>
+
+
+Main Handlebars
+```
+<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+         <div class="navbar-brand">
+             <a class="navbar-item" href="/">
+                 <h1 class="hero">Hops Haven</h1>
+             </a>
+             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                 <span aria-hidden="true"></span>
+                 <span aria-hidden="true"></span>
+                 <span aria-hidden="true"></span>
+             </a>
+         </div>
+
+         <div class="navbar-menu">
+             {{#if logged_in}}
+               <div class="navbar-end">
+                
+                 <a class="navbar-item" href="/dashboard">Dashboard</a>
+                 <a class="navbar-item" href="/">Logout</a>
+               </div>
+             {{else}}
+               <div class="navbar-end">
+             
+                 <a class="navbar-item" href="/login">Log In</a>
+               </div>
+             {{/if}}
+
+         </div>
+       </nav>
+
+        <div class="hero-image">
+       <h1 class="hero-text">Welcome to Hops Haven</h1>
+   </div>
+
+     <main class="container container-fluid mt-5">
+     
+       {{{body}}}
+     </main>
+     <footer>
+
+     </footer>
+   </div>
+
+   {{#if logged_in}}
+     <script src="/js/logout.js"></script>
+   {{/if}}
+ </body>
+```
+
+<p>&nbsp;</p>
+
+
+Authentication JS
+```
+const withAuth = (req, res, next) => {
+   if (!req.session.logged_in) {
+     res.redirect('/login');
+   } else {
+     next();
+   }
+ };
+  module.exports = withAuth;
+```
+
+<p>&nbsp;</p>
+
+
+Beer Seeds JSON
+```
+{
+   "name": "Stella Artois",
+   "type": "Pilsner",
+   "description": "Stella Artois is a Belgian pilsner with a smooth and slightly bitter taste. It is known for its distinctive golden color and floral aroma."
+ },
+```
+<p>&nbsp;</p>
+
+
+Beer Model
+```
+class Beer extends Model {}
+Beer.init(
+ {
+   id: {
+     type: DataTypes.INTEGER,
+     allowNull: false,
+     primaryKey: true,
+     autoIncrement: true,
+   },
+   name: {
+     type: DataTypes.STRING,
+     allowNull: false,
+   },
+   type: {
+     type: DataTypes.STRING,
+     allowNull: false,
+   },
+   description: {
+     type: DataTypes.STRING,
+     allowNull: false,
+   },
+ },
+ {
+   sequelize,
+   timestamps: false,
+   freezeTableName: true,
+   underscored: true,
+   modelName: "beer",
+ }
+);
+
+module.exports = Beer;
+```
+<p>&nbsp;</p>
+
+
+Homeroutes JS
+```
+function generateRandomNumbers(min, max, count) {
+   if (max - min + 1 < count) {
+     throw new Error("Range is smaller than the desired count of random numbers.");
+   }
+    const result = [];
+   const numbers = new Set();
+    while (result.length < count) {
+     const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+     if (!numbers.has(randomNumber)) {
+       numbers.add(randomNumber);
+       result.push(randomNumber);
+     }
+   }
+    return result;
+}
+
+router.get('/', async (req, res) => {
+   try {
+     const allBeers = await Beer.findAll();
+
+     const numOfBeers = allBeers.length;
+
+     const randomBeersIDs = generateRandomNumbers(1, numOfBeers, 3)
+
+     const randomBeers = [];
+     for (let i = 0; i < 3; i++) {
+       const beerData = await Beer.findByPk(randomBeersIDs[i])
+       randomBeers.push(beerData);
+     }
+
+     console.log(randomBeers);
+
+     res.render('homepage', {
+       randomBeers,
+       logged_in: req.session.logged_in
+     });
+   } catch (err) {
+     res.status(500).json(err);
+   }
+ });
+
+ router.get('/login', (req, res) => {
+
+
+   if (req.session.logged_in) {
+     res.redirect('/');
+     return;
+   }
+   res.render('login');
+ });
+
+router.get('/signup', (req, res) => {
+ 
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+  res.render('signup');
+});
+```
+
+<p>&nbsp;</p>
+
+User Routes JS
+```
+router.post("/login", async (req, res) => {
+ try {
+   const newUser = await User.findOne({
+     where: {
+       username: req.body.username,
+     },
+   });
+
+   if (!newUser) {
+     res.status(400).json({
+       message: "Username or Password is incorrect, please try again.",
+     });
+     return;
+   }
+
+   const loginPw = newUser.checkPassword(req.body.password);
+
+
+   if (!loginPw) {
+     res.status(400).json({
+       message: "Username or Password is incorrect, please try again.",
+     });
+     return;
+   }
+
+   req.session.save(() => {
+
+     req.session.userId = newUser.id;
+     req.session.username = newUser.username;
+     req.session.logged_in = true;
+
+     res.status(200).json({ user: newUser, message: "You are logged in!" });
+   });
+ } catch (err) {
+   console.log(err);
+   res.status(500).json(err);
+ }
+});
+router.post("/logout", (req, res) => {
+
+ if (req.session.logged_in) {
+
+   req.session.destroy(() => {
+     res.status(204).end();
+   });
+ } else {
+
+   res.status(404).end();
+ }
+});
+
+module.exports = router
+```
+
+<p>&nbsp;</p>
+
 
 
 
