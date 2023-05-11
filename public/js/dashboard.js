@@ -22,7 +22,9 @@
     results.innerHTML = "";
     data.forEach((beer) => {
       const beerDiv = document.createElement("div");
-      beerDiv.innerHTML = `
+      beerDiv.innerHTML =
+      // Add conditional statement for if an image is not found and returns null
+      `
             <h2>${beer.name}</h2>
             <p>${beer.description}</p>
             <img src="${beer.image_url}" alt="${beer.name}">

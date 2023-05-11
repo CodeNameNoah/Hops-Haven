@@ -15,11 +15,12 @@ router.get("/", withAuth, async (req, res) => {
     // map the post data to plain objects
     const favBeer = favBeerData.map((post) => favBeer.get({ plain: true }));
     console.log(favBeerData)
+    console.log(req.session)
 
     // Render "all-posts-loggedin" template and pass in the post data
     res.render("dashboard", {
     favBeer,
-      loggedIn: req.session.loggedIn,
+      loggedIn: true,
     });
   } catch (err) {
     // res.redirect("login");
