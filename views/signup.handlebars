@@ -1,20 +1,42 @@
-<div class="row">
-      <div class="col-md-6">
-    <h2>Signup</h2>
+<div class="container">
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <h2 class="title is-2">Signup</h2>
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="username-signup">Username:</label>
-        <input class="form-input" type="text" id="username-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">Password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit" onclick="signupFormHandler(event)">Sign up</button>
-      </div>
-    </form>
+      <form class="signup-form">
+        <div class="field">
+          <label class="label" for="username-signup">Username:</label>
+          <div class="control">
+            <input
+              class="input"
+              type="text"
+              id="username-signup"
+              placeholder="Enter your username"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="password-signup">Password:</label>
+          <div class="control">
+            <input
+              class="input"
+              type="password"
+              id="password-signup"
+              placeholder="Enter your password"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button
+              class="button is-primary"
+              type="submit"
+              onclick="signupFormHandler(event)"
+            >Sign up</button>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 

@@ -3,6 +3,7 @@ const { Beer, User } = require('../models');
 const withAuth = require('../utils/auth');
 const { route } = require('./api');
 
+
 function generateRandomNumbers(min, max, count) {
     if (max - min + 1 < count) {
       throw new Error("Range is smaller than the desired count of random numbers.");
@@ -66,6 +67,16 @@ router.get('/signup', (req, res) => {
    }
    res.render('signup');
  });
+ 
+ router.get('/staff', (req, res) => {
+  // If the user is already logged in, redirect the request to another route, staff
+   if (req.session.logged_in) {
+     res.redirect('/');
+     return;
+   }
+   res.render('staff');
+ });
+
  
 
 module.exports = router;

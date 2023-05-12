@@ -1,20 +1,30 @@
-<div class="row">
-  <div class="col-md-6">
-    <h2>Login</h2>
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="username-login">Username:</label>
-        <input class="form-input" type="text" id="username-login" />
+<div id="center-this" class="columns">
+  <div class="column is-half">
+    <h2 class="title">Login</h2>
+    <form class="login-form">
+      <div class="field">
+        <label class="label" for="username-login">Username:</label>
+        <div class="control">
+          <input class="input" type="text" id="username-login" />
+        </div>
       </div>
-      <div class="form-group">
-        <label for="password-login">Password:</label>
-        <input class="form-input" type="password" id="password-login" />
+      <div class="field">
+        <label class="label" for="password-login">Password:</label>
+        <div class="control">
+          <input class="input" type="password" id="password-login" />
+        </div>
       </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit" onclick="loginFormHandler(event)">Login</button>
+      <div class="field">
+        <div class="control">
+          <button
+            class="button is-primary"
+            type="submit"
+            onclick="loginFormHandler(event)"
+          >Login</button>
+        </div>
       </div>
     </form>
-    <a href="/signup">Not a user? Sign Up here!</a>
+    <p>Not a user? <a href="/signup">Sign Up here!</a></p>
   </div>
 </div>
 
