@@ -1,3 +1,9 @@
+function resetLocalStorage(){
+  localStorage.removeItem('searchTerm')
+  localStorage.removeItem('favorites')
+  localStorage.removeItem('beersToTry')
+}
+
 const logout = async () => {
     try {
   
@@ -8,6 +14,7 @@ const logout = async () => {
   
       if (response.ok) {
         document.location.replace('/');
+        resetLocalStorage();
       } else {
         alert(response.statusText);
       }
