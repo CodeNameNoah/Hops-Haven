@@ -34,7 +34,7 @@ Overall, we believe that beer enthusiasts will love using Hops-Haven to find dat
 |         `Handlebars`     |       [LINK](https://handlebarsjs.com/)      |
 |        `Insomnia`        |        [LINK](https://insomnia.rest/)        |
 |        `Punk API`        |        [LINK](https://punkapi.com/)          |
-
+|        `Bulma`            |           [LINK](https://bulma.io/)         |
 
 ---
 
@@ -52,6 +52,14 @@ Overall, we believe that beer enthusiasts will love using Hops-Haven to find dat
 <!-- ![ByteBlogger](https://user-images.githubusercontent.com/127361736/237054631-0e9598b9-955a-4c68-82f2-d2015a29eafb.gif) -->
 
 ---
+<p>&nbsp;</p>
+
+## Table of Contents:
+* Installation (JavaScript, Node.js, NPM Packages, Template Literals, Arrow Functions, Objects, and Functions,SQL, Sequelize, Dotenv, Express.js, Heroku, Handlebars)
+* Usage
+* Credits
+* License
+
 <p>&nbsp;</p>
 
 ### Installation:
@@ -80,19 +88,6 @@ The web application is intended for the user to be able to enter our website, in
 
 Server.js
 ```
-const path = require('path');
-const express = require('express');
-const session = require('express-session');
-const exphbs = require('express-handlebars');
-const routes = require('./controllers');
-const sequelize = require('./config/connection');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
-const app = express();
-const PORT = process.env.PORT || 3001;
-
-require("dotenv").config()
-
 const sess = {
    secret: "Super super secret",
    cookie: {
@@ -393,7 +388,22 @@ By using a website that has access to a beer API like Punk API, you can easily f
 <p>&nbsp;</p>
 
 ## Credits
-
+* Express Installation: https://expressjs.com/en/starter/installing.html
+* Express API: https://expressjs.com/en/api.html
+* GET & POST Requests: https://www.diffen.com/difference/GET-vs-POST-HTTP-Requests
+* Error Help: https://stackoverflow.com/questions/14949118/node-js-error-cannot-find-module-express
+* Express Routing Guide: https://expressjs.com/en/guide/routing.html
+* Error in Sequelize: https://stackoverflow.com/questions/61515940/error-in-sequelize-name-sequelizeeagerloadingerror
+* Express Middleware: https://expressjs.com/en/guide/using-middleware.html
+* Connect Session: https://www.npmjs.com/package/connect-session-sequelize
+* Express-Handlebars: https://www.npmjs.com/package/express-handlebars
+* Built-in Handlebars Helpers: https://handlebarsjs.com/guide/builtin-helpers.html#unless
+* Handlebars training: https://www.youtube.com/watch?v=zT_cGPnl-pw
+* MYSQL2 NPM: https://www.npmjs.com/package/mysql2
+* Bulma CSS Styling: https://bulma.io/documentation/
+* Bcrypt Password Hashing: https://www.geeksforgeeks.org/how-to-use-bcrypt-for-hashing-passwords-in-php/
+* API Keys: https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/api-documentation-and-keys
+* Punk API: https://punkapi.com/
 
 ### License:
 MIT License
