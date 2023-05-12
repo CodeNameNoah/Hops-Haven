@@ -47,11 +47,19 @@ Overall, we believe that beer enthusiasts will love using Hops-Haven to find dat
 | `Afi Nhkume-Crecy` |                                        [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/AFICRECY) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/afi-nkhume-crecy-932862128/)                                        |
 | `Tamara Dusenbury` |                                       [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/tdusenbury) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/tamara-dusenbury-02ab8591/)                                        |
 
+<p>&nbsp;</p>
+
 ## Take A Look At Our Application!
 
 Deployed Application Link on Heroku [Hops Haven](https://hops-haven.herokuapp.com/)
 
 ![Hops Haven Preview](https://github.com/CodeNameNoah/Hops-Haven/assets/127361736/035f8df1-0dbe-4fb7-a23d-1a0a8178037a)
+
+<p>&nbsp;</p>
+
+## Responsive Design Feature
+![Responsive Design Feature](https://github.com/CodeNameNoah/Hops-Haven/assets/101257805/8507d2ec-20ac-4017-9b06-a344c612a028)
+
 
 ---
 
@@ -397,6 +405,34 @@ module.exports = router;
 ```
 
 This User route handles user login and logout functionality. he /login route is responsible for validating user credentials by checking if the provided username exists in the database and comparing the password. If the username or password is incorrect, it returns an appropriate error message. If the login is successful, it saves the user's session data, indicating that they are logged in.
+
+<p>&nbsp;</p>
+
+Bulma Styling Handlebars
+```html
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hops Haven</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <div class="flex-column justify-space-around">
+    <header class="display-flex justify-space-between align-center p-2">
+
+      <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <h1 class="title is-4">Hops Haven</h1>
+          </a>
+
+        </div>
+```
+This code uses Bulma styling framework to apply CSS styles to the HTML elements. The Bulma classes such as "flex-column", "justify-space-around", "display-flex", "justify-space-between", "align-center", "navbar", "navbar-brand", and "navbar-item" are used to create a responsive layout, navigation bar, and branding elements. Additionally, a custom style.css file is linked to the HTML document to apply additional styles as needed.
+
 
 <p>&nbsp;</p>
 
