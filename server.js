@@ -36,8 +36,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use(require("./controllers/home-routes"));
-// app.use(require("./controllers/dashboard-routes"));
 
 app.use(routes);
 
