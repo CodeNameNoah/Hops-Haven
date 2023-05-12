@@ -18,18 +18,13 @@
           <a class="navbar-item" href="/">
             <h1 class="title is-4">Hops Haven</h1>
           </a>
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+
         </div>
 
 
         <div id="navbarMenu" class="navbar-end">
           {{#if logged_in}}
           <a class="navbar-item" href="/dashboard">Dashboard</a>
-          {{!-- <a class="navbar-item" href="/staff">Staff</a> --}}
           <a class="navbar-item" id="logout" href="/">Logout</a>
           {{else}}
           <a class="navbar-item" href="/login">Log In</a>
@@ -41,41 +36,39 @@
       <div class="hero-image">
         <h1 class="hero-text">Welcome to Hops Haven</h1>
       </div>
-
       <nav>
 
-        {{!-- </header> --}}
-        <main class="container container-fluid mt-5">
-          <!-- Render the sub layout -->
-          {{{body}}}
-          <div id="logo" style="position:absolute; width:100%; height:100%">
+    <main class="container container-fluid mt-5">
+      <!-- Render the sub layout -->
+      {{{body}}}
+      <div id="logo" style="position:absolute; width:100%; height:100%">
 
-      <img src="images/hops-haven.png" alt="" >
-          </div>
+        <img src="images/hops-haven.png" alt="">
+      </div>
 
-        </main>
-        <footer>
+    </main>
+    <footer>
 
-        </footer>
+    </footer>
 
-        <!-- Render script for logged in users only -->
-        {{#if logged_in}}
-        <script src="/js/logout.js"></script>
-        {{/if}}
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-        <script>
-          // Select the element to animate
-          const heroText = document.querySelector('.hero-text');
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+      // Select the element to animate
+      const heroText = document.querySelector('.hero-text');
 
-          // Create the GSAP animation
-          gsap.from(heroText, {
-            opacity: 0, // Start with 0 opacity
-            scale: 0.2, // Start with 50% scale
-            duration: 1, // Animation duration in seconds
-            ease: 'power2.out', // Easing function (optional)
-          });
-        </script>
+      // Create the GSAP animation
+      gsap.from(heroText, {
+        opacity: 0, // Start with 0 opacity
+        scale: 0.2, // Start with 50% scale
+        duration: 1, // Animation duration in seconds
+        ease: 'power2.out', // Easing function (optional)
+      });
+    </script>
 
 </body>
 
