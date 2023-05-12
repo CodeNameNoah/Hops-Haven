@@ -424,12 +424,13 @@ By using a website that has access to a beer API like Punk API, you can easily f
 - Bcrypt Password Hashing: https://www.geeksforgeeks.org/how-to-use-bcrypt-for-hashing-passwords-in-php/
 - API Keys: https://www.learnhowtoprogram.com/intermediate-javascript/asynchrony-and-apis/api-documentation-and-keys
 - Punk API: https://punkapi.com/
+- GreenSock Animation Platform: https://greensock.com/gsap/ 
 
 ### License:
 
 MIT License
 
-Copyright (c) [2023] [Afi Nkhume-Crecy]
+Copyright (c) [2023] [Afi Nkhume-Crecy, Noah Hoang, Cassie Tepper, Tamara Dusenbury]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
