@@ -1,6 +1,6 @@
 # Hops-Haven
 
-Hops-Haven is a full-stack web application that beer enthusiasts can use to find data on the beers they love and discover new beers they might enjoy. Our team collaborated to plan the architecture and technologies for the application, following the PVC (Model-View-Controller) paradigm. We chose to use Handlebar for the frontend, Node.js for the backend, and Sequelize as our database, all of which allowed us to build a scalable and maintainable application that met our client's needs.
+Hops-Haven is a full-stack web application that beer enthusiasts can use to find data on the beers they love and discover new beers they might enjoy. Our team collaborated to plan the architecture and technologies for the application, following the MVC (Model-View-Controller) paradigm. We chose to use Handlebar for the frontend, Node.js for the backend, and Sequelize as our database, all of which allowed us to build a scalable and maintainable application that met our client's needs.
 
 ## Description
 
@@ -33,6 +33,7 @@ Overall, we believe that beer enthusiasts will love using Hops-Haven to find dat
 |         `dotenv`         | [LINK](https://www.npmjs.com/package/dotenv) |
 |         `Handlebars`     |       [LINK](https://handlebarsjs.com/)      |
 |        `Insomnia`        |        [LINK](https://insomnia.rest/)        |
+|        `Punk API`        |        [LINK](https://punkapi.com/)          |
 
 
 ---
@@ -54,6 +55,22 @@ Overall, we believe that beer enthusiasts will love using Hops-Haven to find dat
 <p>&nbsp;</p>
 
 ### Installation:
+
+
+**To Clone Our Repository Using CLI**
+
+1. Click on the green code button and copy the link for the SSH key.
+2. Once clip-boarded load up a command line interface and change directory to one of your preference
+3. Enter in the command `git@github.com:CodeNameNoah/Hops-Haven.git`
+4. Enter your protected SSH password
+
+**To Download Our Repository as a ZIP File**
+
+1. Click on the green code button
+2. In the bottom of the drop-down menu, click Download Zip
+
+![github](https://user-images.githubusercontent.com/127361736/227422005-d28a9020-e331-4098-976b-df9c1e545bb4.png)
+
 
 Have you ever wanted to search through a listing of Beers to find exactly what you're looking for? Our team decided on creating a web application that contained an expansive back catalog of beer types and descriptions utilizing a Web API and Sequelize databases. Using the Punk API, we were able to incorporate their database into our own application. Punk API is a free open public domain beer database & schema for use in any (programming) language (e.g. uses plain text data sets). To install this project, a knowledge of HTML, CSS, JavaScript, Web API’s, and Server Side API, Node.js, and Express.js, SQL, Sequelize, Handlebars, and Heroku were required. Methods used ranged from functions, document window methods, querySelector, getElementById, Event Listeners, Variables, If/Else Statements, and the Punk API link and key.
 
@@ -291,7 +308,6 @@ router.get('/', async (req, res) => {
 
  router.get('/login', (req, res) => {
 
-
    if (req.session.logged_in) {
      res.redirect('/');
      return;
@@ -370,20 +386,31 @@ module.exports = router
 <p>&nbsp;</p>
 
 
+### Usage: 
+
+By using a website that has access to a beer API like Punk API, you can easily find and discover new beers that match your preferences. With the ability to search through a vast catalog of beer types and descriptions, you can quickly locate beers that match your preferred style, taste, and even a description with more information about the particular beer. This can be particularly useful if you're a beer enthusiast who wants to stay up-to-date with the latest beer releases and trends. Ultimately, our web application allows access to a beer API that provides users with a comprehensive resource for exploring the world of beer and discovering new and exciting options.
+
+<p>&nbsp;</p>
+
+## Credits
 
 
-**To Clone Our Repository Using CLI**
+### License:
+MIT License
 
-1. Click on the green code button and copy the link for the SSH key.
-2. Once clip-boarded load up a command line interface and change directory to one of your preference
-3. Enter in the command `git@github.com:CodeNameNoah/Hops-Haven.git`
-4. Enter your protected SSH password
+Copyright (c) [2023] [Afi Nkhume-Crecy]
 
-**To Download Our Repository as a ZIP File**
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-1. Click on the green code button
-2. In the bottom of the drop-down menu, click Download Zip
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-![github](https://user-images.githubusercontent.com/127361736/227422005-d28a9020-e331-4098-976b-df9c1e545bb4.png)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 
 ---
