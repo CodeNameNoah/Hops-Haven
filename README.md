@@ -335,6 +335,8 @@ router.get('/signup', (req, res) => {
 });
 ```
 
+This code is handles the routes for a Hops Haven. It has a cool function called generateRandomNumbers that generates unique random numbers within a given range. The main route, '/', is responsible for retrieving beer data from a database and displaying it on the homepage. It picks three random beer IDs, fetches their data, and sends it to the rendered view. If the user already logged in, the /login and /signup routes will redirect them to the homepage. However, if the user is not logged in, it will show the login and signup pages.
+
 <p>&nbsp;</p>
 
 User Routes JS
@@ -392,6 +394,8 @@ router.post("/logout", (req, res) => {
 
 module.exports = router
 ```
+ This User route handles user login and logout functionality. he /login route is responsible for validating user credentials by checking if the provided username exists in the database and comparing the password. If the username or password is incorrect, it returns an appropriate error message. If the login is successful, it saves the user's session data, indicating that they are logged in.
+
 
 <p>&nbsp;</p>
 
