@@ -3,7 +3,7 @@ const router = require("express").Router();
 const { FavBeer } = require("../models");
 const withAuth = require("../utils/auth");
 
-// Get all posts for the logged-in user at the root endpoint '/'
+// Get all favBeers for the logged-in user at the root endpoint '/'
 router.get("/", withAuth, async (req, res) => {
   try {
     // Find all posts associated with current user
@@ -17,7 +17,6 @@ router.get("/", withAuth, async (req, res) => {
     console.log(favBeerData)
     console.log(req.session)
 
-    // Render "all-posts-loggedin" template and pass in the post data
     res.render("dashboard", {
     favBeer,
       logged_in: true,
