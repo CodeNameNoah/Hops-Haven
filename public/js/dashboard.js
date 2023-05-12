@@ -37,17 +37,60 @@
       button.addEventListener("click", (event) => {
         const beerId = event.target.dataset.id;
         const beerName = event.target.dataset.name;
-        const beer = { id: beerId, name: beerName };
+        const beer = { name: beerName, beer_id: beerId };
+
+        console.log(beer);
         if (event.target.id === "add-to-list") {
           beersToTry.push(beer);
           renderBeersToTry();
         } else {
           favorites.push(beer);
           renderFavorites();
+
+          // addToFavorite(beer);
         }
       });
     });
   });
+
+  async function addToFavorite(beer) {
+    let favBeers;
+
+    const addResponse = await fetch("/api/favBeers", {
+      method: "POST",
+      body: JSON.stringify(beer),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+
+    if (addResponse.ok) {
+      favBeers = await fetch("/api/favBeers", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }) 
+
+      console.log(favBeers)
+    }
+  }
+
+  async function addToBeerToTry(beer) {
+    const addResponse = await fetch("/api/beerToTry", {
+      method: "POST",
+      body: JSON.stringify(beer),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+
+    if (response.ok) {
+      
+    }
+  }
+
+
 
   function renderFavorites() {
     favoritesList.innerHTML = "";
@@ -84,45 +127,3 @@
       });
     });
   }
-
-    // Load saved lists from local storage when the page loads
-    window.addEventListener('DOMContentLoaded', function () {
-      const beersToTryStorageList = JSON.parse(localStorage.getItem('beersToTry')) || [];
-      const favoritesStorageList = JSON.parse(localStorage.getItem('favorites')) || [];
-  
-      // Display the saved lists
-      const beersToTryStorageListElement = document.getElementById('beers-to-try');
-      const favoritesListStorageElement = document.getElementById('favorites');
-  
-      beersToTryStorageList.forEach(function (beer) {
-        const li = document.createElement('li');
-        li.textContent = beer;
-        beersToTryStorageListElement.appendChild(li);
-      });
-  
-      favoritesStorageList.forEach(function (beer) {
-        const li = document.createElement('li');
-        li.textContent = beer;
-        favoritesStorageListElement.appendChild(li);
-      });
-    });
-  
-    // Save lists to local storage when a beer is added
-    document.addEventListener('submit', function (event) {
-      event.preventDefault();
-      const searchInput = document.getElementById('search');
-      const beerName = searchInput.value;
-  
-      // Save the beer to the appropriate list
-      const favoritesStorageList = JSON.parse(localStorage.getItem('favorites')) || [];
-      favoritesStorageList.push(beerName);
-      localStorage.setItem('favorites', JSON.stringify(favoritesList));
-  
-      // Update the favorites list on the page
-      const favoritesStorageListElement = document.getElementById('favorites');
-      const li = document.createElement('li');
-      li.textContent = beerName;
-      favoritesStorageListElement.appendChild(li);
-  
-      searchInput.value = '';
-    });
