@@ -60,6 +60,23 @@
 
 img {
     height: 250px;
+
+    max-width: 100%;
+}
+
+.column {
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+  
+  .column:first-child {
+    margin-left: -7;
+  }
+  
+  .column:last-child {
+    margin-right: -7;
+  }
+
     max-width: 100%
 }
 
@@ -141,3 +158,4 @@ employee-image {
 li {
     list-style-type: disc;
 }
+
