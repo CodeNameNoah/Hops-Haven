@@ -132,3 +132,8 @@ employee-image {
     margin: 0 auto;
     margin-bottom: 10px;
 }
+
+#center-this {
+    display: flex;
+    justify-content: center;
+}
