@@ -5,7 +5,8 @@ const User = require('./User');
 // User has many beers (through favBeers)
 User.belongsToMany(Beer, {
     foreignKey: "user_id",
-    through: FavBeer
+    through: FavBeer,
+    onDelete: "CASCADE"
 });
 
 // Beer has many Users (through favBeers)

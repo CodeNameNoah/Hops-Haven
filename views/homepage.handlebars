@@ -1,16 +1,20 @@
-<div>
-
-    <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80" />
-
-    <h2>Beer of the Day</h2>
-
+<div class="card">
+  <div class="card-content">
+    <h2 class="title is-2" id="beerMe">Beer Me!</h2>
     <ul>
-        {{#each randomBeers as |randomBeer|}}
-            <li>{{randomBeer.dataValues.name}}</li>
-        {{/each}}
+      {{#each randomBeers as |randomBeer|}}
+        <li><strong>Name:</strong> {{randomBeer.dataValues.name}}</li>
+        <li><strong>Type:</strong> {{randomBeer.dataValues.type}}</li>
+        <li><strong>Description:</strong>
+          {{randomBeer.dataValues.description}}</li>
+      {{/each}}
     </ul>
-
+    <br />
+    <p>Refresh the page to get a new random beer!</p>
+    <!-- Added button element -->
+    <br />
     <h3>What other beer lovers are drinking</h3>
-
+    <br />
     <a href="/login">Sign in for personalized recommendations</a>
+  </div>
 </div>
