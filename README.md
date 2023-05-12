@@ -86,8 +86,9 @@ The web application is intended for the user to be able to enter our website, in
 
 <p>&nbsp;</p>
 
-Server.js
-```
+### Server.js
+
+``` js
 const sess = {
    secret: "Super super secret",
    cookie: {
@@ -117,11 +118,16 @@ sequelize.sync({ force: false }).then(() => {
        console.log(`App listening on port ${PORT}!`));
 });
 ```
+
+
+**Server.js** sets up an Express.js server with session management using Express Session and Sequelize for session storage in a database. It configures the server to use Handlebars as the view engine, sets up middleware for parsing JSON and URL-encoded data, and serves static files. It defines application routes and syncs with the database before starting the server on a specified port.
+
 <p>&nbsp;</p>
 
 
-Homepage Handlebars
-```
+
+### Homepage Handlebars
+``` html
 <div>
    <img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80" />
 
@@ -138,11 +144,13 @@ Homepage Handlebars
    <a href="/login">Sign in for personalized recommendations</a>
 </div>
 ```
+The template was created with Handlebars and it displays an image, the "Beer of the Day" heading, a list of random beers, and a subheading for what other beer lovers are drinking. It also includes a link to the login page for personalized recommendations.
+
 <p>&nbsp;</p>
 
 
-Main Handlebars
-```
+### Main Handlebars
+``` html
 <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
          <div class="navbar-brand">
              <a class="navbar-item" href="/">
@@ -190,12 +198,13 @@ Main Handlebars
    {{/if}}
  </body>
 ```
+This Handlebars HTML code creates a responsive navigation bar and a hero image section welcoming users to "Hops Haven," that will be consistent across the Hops Haven website. It includes conditional blocks to render different navigation options based on the user's login status and loads a JavaScript file for logout functionality when logged in.
 
 <p>&nbsp;</p>
 
 
-Authentication JS
-```
+## Authentication JS
+``` js
 const withAuth = (req, res, next) => {
    if (!req.session.logged_in) {
      res.redirect('/login');
@@ -205,23 +214,26 @@ const withAuth = (req, res, next) => {
  };
   module.exports = withAuth;
 ```
+This is a middleware function that checks if the user if logged in or not. If the user is not logged in, they will be redirected to the login page. If the user is logged in  then it calls the next() function to proceed with the next step.
 
 <p>&nbsp;</p>
 
 
-Beer Seeds JSON
-```
+## Beer Seeds JSON
+``` json
 {
    "name": "Stella Artois",
    "type": "Pilsner",
    "description": "Stella Artois is a Belgian pilsner with a smooth and slightly bitter taste. It is known for its distinctive golden color and floral aroma."
  },
 ```
+Beer seeds were created to facilitate testing, development, demonstration, data modeling, and performance evaluation of Hops Haven, leading to better functionality, improved user experience, and efficient data handling.
+
 <p>&nbsp;</p>
 
 
 Beer Model
-```
+``` js
 class Beer extends Model {}
 Beer.init(
  {
@@ -255,11 +267,14 @@ Beer.init(
 
 module.exports = Beer;
 ```
+
+This code defines a Beer model using Sequelize. The Beer model extends the Model class and includes properties such as `id`, `name`, `type`, and `description`. The Beer model is exported to be used in other parts of the project. This code defines the Beer model and enables seamless interaction with beer data.
+
 <p>&nbsp;</p>
 
 
 Homeroutes JS
-```
+``` js
 function generateRandomNumbers(min, max, count) {
    if (max - min + 1 < count) {
      throw new Error("Range is smaller than the desired count of random numbers.");
@@ -323,7 +338,7 @@ router.get('/signup', (req, res) => {
 <p>&nbsp;</p>
 
 User Routes JS
-```
+``` js
 router.post("/login", async (req, res) => {
  try {
    const newUser = await User.findOne({
