@@ -2,6 +2,8 @@
 
 Hops-Haven is a full-stack web application that beer enthusiasts can use to find data on the beers they love and discover new beers they might enjoy. Our team collaborated to plan the architecture and technologies for the application, following the MVC (Model-View-Controller) paradigm. We chose to use Handlebar for the frontend, Node.js for the backend, and Sequelize as our database, all of which allowed us to build a scalable and maintainable application that met our client's needs.
 
+![Screenshot of My Site](./images/homepage.PNG)
+
 ## Description
 
 Our application provides users with an intuitive and user-friendly interface that makes it easy to browse and search for information about beers. Whether you're someone who's just getting into beer or a seasoned enthusiast, Hops-Haven is designed to be accessible to everyone.

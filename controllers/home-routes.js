@@ -26,11 +26,8 @@ function generateRandomNumbers(min, max, count) {
 router.get('/', async (req, res) => {
     try {
       const allBeers = await Beer.findAll();
-
       const numOfBeers = allBeers.length;
-
       const randomBeersIDs = generateRandomNumbers(1, numOfBeers, 3)
-
       const randomBeers = [];
       for (let i = 0; i < 1; i++) {
         const beerData = await Beer.findByPk(randomBeersIDs[i])
@@ -38,7 +35,6 @@ router.get('/', async (req, res) => {
       }
 
       console.log(randomBeers);
-
       // Pass serialized data and session flag into template
       res.render('homepage', {
         randomBeers,
