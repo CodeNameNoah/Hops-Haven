@@ -137,3 +137,7 @@ employee-image {
     display: flex;
     justify-content: center;
 }
+
+li {
+    list-style-type: disc;
+}
