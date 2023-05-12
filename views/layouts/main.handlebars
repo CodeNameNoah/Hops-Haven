@@ -27,46 +27,21 @@
 
 
            <div id="navbarMenu" class="navbar-end">
-                {{!-- <div class="navbar-end"> --}}
               {{#if logged_in}}
-                  {{!-- <a class="navbar-item" href="about.html">About</a> --}}
-                  {{!-- <a class="navbar-item" href="#">Contact</a> --}}
                   <a class="navbar-item" href="/dashboard">Dashboard</a>
                   <a class="navbar-item" id="logout" href="/">Logout</a>
-                {{!-- </div> --}}
               {{else}}
-                {{!-- <div class="navbar-end"> --}}
-                 {{!-- <a class="navbar-item" href="about.html">About</a> --}}
-                  {{!-- <a class="navbar-item" href="/staff">Staff</a> --}}
                   <a class="navbar-item" href="/login">Log In</a>
-                {{!-- </div> --}}
               {{/if}}
 
           </div>
         </nav>
 
- {{!-- Cassie added --}}
          <div class="hero-image">
         <h1 class="hero-text">Welcome to Hops Haven</h1>
          </div>
-{{!--  <a href="/"><h1>Hops Haven<img /></h1></a> --}}
 
          <nav>
-          
-        <!-- Conditionally render login or logout links -->
-        {{!--
-          {{#if logged_in}}
-            <a class="col-auto" href="/dashboard">Dashboard</a>
-            <a class="col-auto" id="logout">Logout</a>
-          {{else}}
-
-            {{! <nav class="header-nav"> }}
-            <a class="col-auto" href="/login">Login</a>
-
-            {{! </nav> }}
-          {{/if}}
-        </nav> 
---}}
 
       {{!-- </header> --}}
       <main class="container container-fluid mt-5">
@@ -76,7 +51,6 @@
       <footer>
 
       </footer>
-    {{!-- </div> --}}
 
     <!-- Render script for logged in users only -->
     {{#if logged_in}}
